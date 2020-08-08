@@ -24,10 +24,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #151b20;
   margin-top: 60px;
 }
 body{
-  background-image: url("/images/zdj1.jpg");
+  background-image: url("/images/cup-of-coffee-1280537_1920.jpg");
 }
 </style>

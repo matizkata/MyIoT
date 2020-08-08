@@ -8,8 +8,8 @@
      <label for="password">Password:</label><br>
     <input type="password" id="password" class="form"><br>
     <button type="submit" class="btn btn-secondary">Submit</button>
-    
-   </div> 
+
+   </div>
 </div>
 </form>
 </template>
@@ -29,12 +29,16 @@ name: 'Logins'
     margin-right: auto;
     text-align: center;
     height:300px;
-    padding:10px;  
-  
+    padding:10px;
+
+
 }
 .form
 {
    margin-bottom: 10px;
+}
+.inputs{
+   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 </style>

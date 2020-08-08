@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
+    <topBar></topBar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 
+import topBar from './components/topBar';
 
 export default {
   name: 'App',
   components: {
-
+   topBar
   }
 }
 </script>

@@ -3,6 +3,7 @@
     <topBar></topBar>
     <div class="content">
       <router-view></router-view>
+
     </div>
     <ftr></ftr>
   </div>
@@ -36,7 +37,7 @@ body{
     background-image: url("/images/zdj2.jpg");
     background-attachment: fixed;
     background-size: 100% auto;
-  margin:0;
+    margin:0;
 }
 html{
   max-height: 100%;

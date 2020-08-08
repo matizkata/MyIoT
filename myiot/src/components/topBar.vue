@@ -7,12 +7,7 @@
           <div class="col menu"><span><router-link class="menuLink" to="about">ABOUT</router-link></span></div>
           <div class="col menu"><span><router-link class="menuLink" to="/login">LOGIN</router-link></span></div>
           <div class="col mr-5 menu"><span><router-link class="menuLink" to="/registry">SIGN UP</router-link></span></div>
-          <div class="col menu"><iframe src="http://free.timeanddate.com/clock/i7entjlf/n1460/fn16/tcf0f8ff/pct/ftb/th2" frameborder="0" width="86" height="18" allowTransparency="true"></iframe>
-
-
-
-
-</div>
+          <div class="col menu"><iframe src="http://free.timeanddate.com/clock/i7entjlf/n1460/fn16/tcf0f8ff/pct/ftb/th2" frameborder="0" width="86" height="18" allowTransparency="true"></iframe></div>
       </div>
     </div>
   </div>

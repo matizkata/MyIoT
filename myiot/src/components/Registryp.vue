@@ -21,15 +21,15 @@
                      <option value="UK">UK</option>
                      <option value="Deutschland">Deutschland</option>
                  </select><br>
-                 <button type="submit" class="btn btn-secondary">Submit</button>  
-            </div> 
+                 <button type="submit" class="btn btn-secondary">Submit</button>
+            </div>
         </div>
     </form>
 </template>
 
 <script>
 export default {
-    name: 'Registryp'  
+    name: 'Registryp'
 }
 </script>
 
@@ -41,8 +41,8 @@ export default {
     margin-right: auto;
     text-align: center;
     height:300px;
-    padding:10px;  
-  
+    padding:10px;
+
 }
 .form
 {
@@ -60,5 +60,8 @@ export default {
     width:300px;
     text-align:center;
     background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    position:relative;
+    left:20%;
 }
 </style>

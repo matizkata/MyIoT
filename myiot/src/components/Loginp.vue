@@ -8,8 +8,8 @@
      <label for="password">Password:</label><br>
     <input type="password" id="password" class="form"><br>
     <button type="submit" class="btn btn-secondary">Submit</button>
-    
-   </div> 
+
+   </div>
 </div>
 </form>
 </template>
@@ -29,8 +29,9 @@ name: 'Logins'
     margin-right: auto;
     text-align: center;
     height:300px;
-    padding:10px;  
-  
+    padding:10px;
+
+
 }
 .form
 {

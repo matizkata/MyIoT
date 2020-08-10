@@ -4,8 +4,8 @@
       <div class="homeItem">
        <img class="itemIcon" src="/images/idea.png">
         <div class="itemText">
-          <h5>Witamy na stronie MyIoT</h5>
-          <p>Dzięki tej stronie możesz stworzyć swoje własne urządzenie IoT, którego potrzebujesz, bądź zacząć przygodę z tą dziedziną.</p>
+          <h5>Witamy na stronie ezIoT</h5>
+          <p>Dzięki tej stronie możesz po prostu stworzyć swoje własne urządzenie IoT, którego potrzebujesz, bądź zacząć przygodę z Internetem Rzeczy.</p>
           <p>Prezentowane i użyte technologie bazują na licencjach opensource. Celem tej strony jest samorozwój jej autorów oraz stworzenia innym wygodnego narzędzia do zagłębienia się w świat elektroniiki.</p>
         </div>
      </div>
@@ -53,10 +53,15 @@
             </div>
         </div>
       </div>
-      <div class="slideDownArrow" v-on:click="isVisible=!isVisible">
+      <div class="slideDownArrow" v-on:click="isVisible=!isVisible" v-if="!isVisible">
         <img class="arrowIcon" src="/images/down.png">
         <div class="itemText"><p>Zabierz mnie dalej!</p></div>
-     </div>
+      </div>
+      <div class="slideDownArrow" v-on:click="isVisible=!isVisible" v-else>
+        <img class="arrowIcon" src="/images/up.png">
+        <div class="itemText"><p>Zwiń</p></div>
+      </div>
+
 
    </div>
  </div>
@@ -93,6 +98,13 @@
   .homeItem{
     min-width: 50%;
     margin-bottom: 100px;
+    transition-duration: 500ms;
+  }
+
+  .homeItem:hover{
+    min-width: 50%;
+    margin-bottom: 100px;
+    transform:translateX(10px);
   }
 
 
@@ -119,6 +131,12 @@
    margin-left: auto;
    min-width: 200px;
    line-height: 40px;
+   transition-duration: 100ms;
+ }
+
+ .slideDownArrow:hover{
+   transform: scaleX(1.1);
+
  }
 
  .homeContents{

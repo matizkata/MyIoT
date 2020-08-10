@@ -24,7 +24,7 @@
           <img class="itemIcon" src="/images/signal.png">
             <div class="itemText">
               <h5>Urządzenie jest podłączone do lokalnej sieci WiFi!</h5>
-              <p>Dzięki podłączeniu urządzenia do lokalnej sieci WiFi możliwa będzie nieustanna komunikacja z serwerem w celu wymiany danych</p>
+              <p>Dzięki podłączeniu urządzenia do lokalnej sieci WiFi możliwa będzie nieustanna komunikacja ze zdalnym serwerem w celu wymiany danych</p>
               <p>Ważnym czynnikiem jest zasięg sieci bezprzewodowej w miejscu, gdzie urządzenie będzie pracować</p>
             </div>
         </div>
@@ -33,7 +33,7 @@
             <div class="itemText">
               <h5>Urządzenie Internetu Rzeczy - Internet of Things!</h5>
               <p>W ten sposób stworzysz własne urządzenie IoT, zdobędziesz wiedzę na temat funkcjonowania takich rozwiązań, bądź po prostu wykonasz spersonalizowane i funkcjonalne urządzenie, którego potrzebujesz</p>
-              <p>IoT jest obecnie bardzo szybko rozwijającym się trendem.</p>
+              <p>IoT jest obecnie bardzo szybko rozwijającym się trendem w informatyce.</p>
             </div>
         </div>
           <div class="homeItem">
@@ -49,7 +49,7 @@
             <div class="itemText">
               <h5>Steruj urządzeniem za pomocą panelu w aplikacji</h5>
               <p>Gotowe zoptymalizowane przez nas urządzenia posiadają również gotowe panele administracyjne dostępne z Twojego konta, na którym dodano urządzenie.</p>
-              <p>Pozostaje tylko korzystać i cieszyć się z wygody jaką oferuje urządzenie sterowane bezprzewodowo.</p>
+              <p>Pozostaje tylko korzystać i cieszyć się z wygody jaką oferuje urządzenie sterowane bezprzewodowo. W ten łatwy sposób możesz wprowadzić trochę technologii do swojego domu, garażu lub nawet małego biznesu. Możesz też po prostu dobrze się bawić!</p>
             </div>
         </div>
       </div>
@@ -88,7 +88,7 @@
   .window{
     background-color: aliceblue;
     margin-top:50px;
-    padding:30px;
+    padding:20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);

@@ -7,8 +7,8 @@
          <input type="email" id="email" class="form" placeholder="name@example.com"><br>
          <label for="password">Password:</label><br>
          <input type="password" id="password" class="form"><br>
-         <button type="submit" class="btn btn-secondary">Submit</button>  
-   </div> 
+         <button type="submit" class="btn btn-secondary">Submit</button>
+   </div>
 </div>
 </form>
 </template>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-name: 'Logins'
+name: 'Loginp'
 }
 </script>
 

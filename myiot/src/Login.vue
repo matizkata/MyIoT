@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Loginp></Loginp>
+    <Loginp/>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 import Loginp from './components/Loginp';
 
 export default {
-  name: 'Loginp',
+  name: 'Login',
   components: {
   Loginp
 

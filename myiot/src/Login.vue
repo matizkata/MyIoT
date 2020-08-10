@@ -1,7 +1,7 @@
 <template>
-<div>
-<Loginp />
-</div>
+  <div>
+    <Loginp></Loginp>
+  </div>
 </template>
 
 
@@ -10,6 +10,7 @@
 import Loginp from './components/Loginp';
 
 export default {
+  name: 'Loginp',
   components: {
   Loginp
 

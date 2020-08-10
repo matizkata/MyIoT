@@ -7,14 +7,8 @@
                  <input type="email" id="email" class="form" placeholder="name@example.com"><br>
                  <label for="username">Username:</label><br>
                  <input type="text" id="username" class="form"><br>
-                 <label for="name">Name:</label><br>
-                 <input type="name" id="text" class="form"><br>
-                 <label for="surname">Surname:</label><br>
-                 <input type="text" id="surname" class="form"><br>
                  <label for="password">Password:</label><br>
                  <input type="password" id="password" class="form"><br>
-                 <label for="birthday" >Birthday:</label><br>
-                 <input type="date" id="birthday"><br>
                  <label for="country">Country:</label><br>
                  <select id="country" class="select">
                      <option value="Poland">Poland</option>

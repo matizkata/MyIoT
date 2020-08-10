@@ -1,7 +1,7 @@
 <template>
-    <form action="" method="">
-        <div class="back">
+      <div class="d-flex align-content-center justify-content-center main">
             <div class="inputs">
+              <form action="" method="">
                  <h4><span class='one'>S</span><span class='two'>I</span><span class='three'>G</span><span class='four'>N</span> <span class='five'>U</span><span class='six'>P</span></h4>
                  <label for="email">Email address:</label><br>
                  <input type="email" id="email" class="form" placeholder="name@example.com"><br>
@@ -22,9 +22,9 @@
                      <option value="Deutschland">Deutschland</option>
                  </select><br>
                  <button type="submit" class="btn btn-secondary">Submit</button>
+              </form>
             </div>
         </div>
-    </form>
 </template>
 
 <script>
@@ -34,29 +34,12 @@ export default {
 </script>
 
 <style>
-.back
-{
-    width:500px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    height:300px;
-    padding:15px;
-
-}
 
 .select
 {
     margin-bottom:10px;
 }
-.inputs
-{
-    padding:10px;
-    text-align:center;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    position:relative;
-}
+
 
  h4 {
     margin: 0;
@@ -79,7 +62,7 @@ export default {
     justify-self: center;
     padding-bottom: 0.7rem;
   }
-  
+
   @keyframes glow {
     from {
       text-shadow: 0 0 20px #2d9da9;

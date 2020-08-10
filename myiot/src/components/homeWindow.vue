@@ -104,7 +104,7 @@
 
   .homeItem:hover{
     min-width: 50%;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     transform:translateX(10px);
   }
 

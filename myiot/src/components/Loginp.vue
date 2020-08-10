@@ -26,6 +26,8 @@ background-color: aliceblue;
 margin-top:50px;
 padding:30px;
 text-align: center;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 .main{

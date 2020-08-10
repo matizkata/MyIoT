@@ -9,58 +9,69 @@
           <p>Prezentowane i użyte technologie bazują na licencjach opensource. Celem tej strony jest samorozwój jej autorów oraz stworzenia innym wygodnego narzędzia do zagłębienia się w świat elektroniiki.</p>
         </div>
      </div>
-     <div class="slideDownArrow">
+
+
+      <div class="homeContents" v-bind:class="{contentIsVisible:isVisible}">
+        <div class="homeItem">
+            <img class="itemIcon" src="/images/chip.png">
+            <div class="itemText">
+              <h5>Wszystko zaczyna sie od mikrokontrolera!</h5>
+              <p>Do utworzenia urządzenia sterowalnego za pośrednictwem panelu na naszej stronie potrzebujesz płytki z mikrokontrolerem oraz modułem łączności w standardzie WiFi. Możesz też dołączyć taki moduł do posiadanej płytki</p>
+              <p>W proponowanych i zoptymalizowanych przez nas projektach użyto urządzeń zgodnych z Arduino IDE oraz modułu ESP8266.</p>
+            </div>
+        </div>
+        <div class="homeItem">
+          <img class="itemIcon" src="/images/signal.png">
+            <div class="itemText">
+              <h5>Urządzenie jest podłączone do lokalnej sieci WiFi!</h5>
+              <p>Dzięki podłączeniu urządzenia do lokalnej sieci WiFi możliwa będzie nieustanna komunikacja z serwerem w celu wymiany danych</p>
+              <p>Ważnym czynnikiem jest zasięg sieci bezprzewodowej w miejscu, gdzie urządzenie będzie pracować</p>
+            </div>
+        </div>
+        <div class="homeItem">
+          <img class="itemIcon" src="/images/cloud.png">
+            <div class="itemText">
+              <h5>Urządzenie Internetu Rzeczy - Internet of Things!</h5>
+              <p>W ten sposób stworzysz własne urządzenie IoT, zdobędziesz wiedzę na temat funkcjonowania takich rozwiązań, bądź po prostu wykonasz spersonalizowane i funkcjonalne urządzenie, którego potrzebujesz</p>
+              <p>IoT jest obecnie bardzo szybko rozwijającym się trendem.</p>
+            </div>
+        </div>
+          <div class="homeItem">
+          <img class="itemIcon" src="/images/code.png">
+            <div class="itemText">
+              <h5>Nie bój się kodu, udostępniamy gotowe programy do umieszczenia na płytce zgodnej z Arduino IDE</h5>
+              <p>Wstępne przygotowanie urządzenia od strony kodowej pozwoli Ci podpatrzeć i zrozumieć jak to działa.</p>
+              <p>Jeśli masz pomysł na własne urządzenie, skontaktuj się z nami, zależy nam na samorozwoju.</p>
+            </div>
+        </div>
+          <div class="homeItem">
+          <img class="itemIcon" src="/images/internet.png">
+            <div class="itemText">
+              <h5>Steruj urządzeniem za pomocą panelu w aplikacji</h5>
+              <p>Gotowe zoptymalizowane przez nas urządzenia posiadają również gotowe panele administracyjne dostępne z Twojego konta, na którym dodano urządzenie.</p>
+              <p>Pozostaje tylko korzystać i cieszyć się z wygody jaką oferuje urządzenie sterowane bezprzewodowo.</p>
+            </div>
+        </div>
+      </div>
+      <div class="slideDownArrow" v-on:click="isVisible=!isVisible">
         <img class="arrowIcon" src="/images/down.png">
         <div class="itemText"><p>Zabierz mnie dalej!</p></div>
      </div>
-     <div class="homeItem">
-        <img class="itemIcon" src="/images/chip.png">
-        <div class="itemText">
-          <h5>Wszystko zaczyna sie od mikrokontrolera!</h5>
-          <p>Do utworzenia urządzenia sterowalnego za pośrednictwem panelu na naszej stronie potrzebujesz płytki z mikrokontrolerem oraz modułem łączności w standardzie WiFi. Możesz też dołączyć taki moduł do posiadanej płytki</p>
-          <p>W proponowanych i zoptymalizowanych przez nas projektach użyto urządzeń zgodnych z Arduino IDE oraz modułu ESP8266.</p>
-        </div>
-     </div>
-     <div class="homeItem">
-       <img class="itemIcon" src="/images/signal.png">
-        <div class="itemText">
-          <h5>Urządzenie jest podłączone do lokalnej sieci WiFi!</h5>
-          <p>Dzięki podłączeniu urządzenia do lokalnej sieci WiFi możliwa będzie nieustanna komunikacja z serwerem w celu wymiany danych</p>
-          <p>Ważnym czynnikiem jest zasięg sieci bezprzewodowej w miejscu, gdzie urządzenie będzie pracować</p>
-        </div>
-     </div>
-     <div class="homeItem">
-       <img class="itemIcon" src="/images/cloud.png">
-        <div class="itemText">
-          <h5>Urządzenie Internetu Rzeczy - Internet of Things!</h5>
-          <p>W ten sposób stworzysz własne urządzenie IoT, zdobędziesz wiedzę na temat funkcjonowania takich rozwiązań, bądź po prostu wykonasz spersonalizowane i funkcjonalne urządzenie, którego potrzebujesz</p>
-          <p>IoT jest obecnie bardzo szybko rozwijającym się trendem.</p>
-        </div>
-     </div>
-      <div class="homeItem">
-       <img class="itemIcon" src="/images/code.png">
-        <div class="itemText">
-          <h5>Nie bój się kodu, udostępniamy gotowe programy do umieszczenia na płytce zgodnej z Arduino IDE</h5>
-          <p>Wstępne przygotowanie urządzenia od strony kodowej pozwoli Ci podpatrzeć i zrozumieć jak to działa.</p>
-          <p>Jeśli masz pomysł na własne urządzenie, skontaktuj się z nami, zależy nam na samorozwoju.</p>
-        </div>
-     </div>
-      <div class="homeItem">
-       <img class="itemIcon" src="/images/internet.png">
-        <div class="itemText">
-          <h5>Steruj urządzeniem za pomocą panelu w aplikacji</h5>
-          <p>Gotowe zoptymalizowane przez nas urządzenia posiadają również gotowe panele administracyjne dostępne z Twojego konta, na którym dodano urządzenie.</p>
-          <p>Pozostaje tylko korzystać i cieszyć się z wygody jaką oferuje urządzenie sterowane bezprzewodowo.</p>
-        </div>
-     </div>
+
    </div>
  </div>
 </template>
 
 <script>
-export default {
-  name:'homeWindow'
-}
+  export default {
+    name: 'homeWindow',
+    data: function() {
+      return {
+        isVisible:false,
+      }
+    },
+
+  }
 </script>
 
 <style>
@@ -81,7 +92,7 @@ export default {
 
   .homeItem{
     min-width: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
   }
 
 
@@ -109,4 +120,17 @@ export default {
    min-width: 200px;
    line-height: 40px;
  }
+
+ .homeContents{
+   height: 0;
+   /* display: none; */
+   transition-duration: 500ms;
+   overflow: hidden;
+ }
+.contentIsVisible{
+  height: 1012px;
+  /* display: block; */
+}
+
+
 </style>

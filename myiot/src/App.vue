@@ -44,7 +44,7 @@ html{
   max-height: 100%;
 }
 .content{
-  min-height: calc(100vh - 110px);
+  min-height: calc(100vh - 120px);
 }
 /* .placehold{
   width: 100px;

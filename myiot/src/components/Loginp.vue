@@ -23,7 +23,7 @@ export default {
 .inputs{
 /* margin-left:50%; */
 background-color: aliceblue;
-margin-top:50px;
+margin-top:100px;
 padding:30px;
 text-align: center;
 border-radius: 10px;

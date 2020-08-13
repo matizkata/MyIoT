@@ -1,18 +1,26 @@
 <template>
-<div>
-  <Homep/>
-</div>
-</template>
 
+  <div>
+   <homeWindow/>
+  </div>
+</template>
 
 <script>
 
-import Homep from './components/Homep';
+import homeWindow from './components/homeWindow';
+
 export default {
   name: 'Home',
-  components: {
-  Homep
-
+  components:{ homeWindow
   }
 }
 </script>
+
+<style>
+
+</style>
+
+
+
+
+

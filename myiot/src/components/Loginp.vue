@@ -2,7 +2,7 @@
     <div class="d-flex align-content-center justify-content-center main">
         <div class="inputs">
             <form action="" method="">
-                <h4><span class='one'>L</span><span class='two'>o</span><span class='three'>g</span> <span class='four'>i</span><span class='five'>n</span></h4>
+                <h4>LOG IN</h4>
                 <label for="email">Email address:</label><br>
                 <input type="email" id="email" class="form" placeholder="name@example.com"><br>
                 <label for="password">Password:</label><br>
@@ -23,7 +23,7 @@ export default {
 .inputs{
 /* margin-left:50%; */
 background-color: aliceblue;
-margin-top:50px;
+margin-top:100px;
 padding:30px;
 text-align: center;
 border-radius: 10px;

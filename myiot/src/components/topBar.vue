@@ -1,16 +1,26 @@
 <template>
-  <div class="topMenu">
-    <div class="container top">
-      <div class="row">
-          <div class="col-3 mr-3"><span><router-link class="menuLink" to="/"><img class="logo" src="/images/logo_03.gif"></router-link></span></div>
-          <div class="col menu"><span><router-link class="menuLink" to="/">HOME</router-link></span></div>
-          <div class="col menu"><span><router-link class="menuLink" to="about">ABOUT</router-link></span></div>
-          <div class="col menu"><span><router-link class="menuLink" to="/login">LOGIN</router-link></span></div>
-          <div class="col mr-5 menu"><span><router-link class="menuLink" to="/registry">SIGN UP</router-link></span></div>
-          <div class="col menu"><iframe src="http://free.timeanddate.com/clock/i7entjlf/n1460/fn16/tcf0f8ff/pct/ftb/th2" frameborder="0" width="86" height="18" allowTransparency="true"></iframe></div>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light pasek">
+    <div class="navbar-brand ml-4 nawigacja">
+      <!-- <span><router-link class="menuLink" to="/"><img class="logo" src="/images/logo1.png"></router-link></span> -->
+      <span class="titleLogo">ezIoT</span>
     </div>
-  </div>
+    <div class="navbar-brand">
+      <div class="menu"><iframe src="http://free.timeanddate.com/clock/i7entjlf/n1460/fn16/tcf0f8ff/pct/ftb/th2" frameborder="0" width="86" height="18" allowTransparency="true"></iframe></div>
+    </div>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><router-link class="nav-link menuLink" to="/">HOME</router-link></li>
+        <li class="nav-item"><router-link class="nav-link menuLink" to="about">ABOUT</router-link></li>
+        <li class="nav-item"><router-link class="nav-link menuLink" to="/login">LOGIN</router-link></li>
+        <li class="nav-item"><router-link class="nav-link menuLink" to="/registry">SIGN UP</router-link></li>
+      </ul>
+    </div>
+
+  </nav>
 </template>
 
 <script>
@@ -24,26 +34,14 @@ span{
   padding: 10px;
 }
 
-.topMenu{
-  position:relative;
-  height: 60px;
-  background-color: #f0f8ff;
-  padding-top: 0;
-  overflow: visible;
-  margin:0;
-  z-index: 100;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-  scroll-padding-bottom: 130px;
-  border-radius: 10px;
-}
-
-.logo{
-  max-width: 85%;
+/* .logo{//nie usuwac, moze sie przydac jakbysmy jednak chcieli logo
+  max-width: 70%;
   max-height: 150px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+} */
 
-
-}
+/* SELEKTOR CSS MENU JEST POTRZEBNY ZE WZGLEDU NA ZEGAR NA PASKU, JAK SIE TO USUNIE TO STOPKA PRZY LOGOWANIU SIE WYSYPUJE BO NIE ZGADZA SIE WYSOKOSC CONTENT - PRZEZ ATRYBUT LINE-HEIGHT */
+/* MOZNA USUNAC SELEKTOR CSS .MENU JESLI SIE USUNIE ZEGAR Z MENU */
 .menu{
   line-height: 60px;
   text-align: center;
@@ -56,9 +54,6 @@ span{
   color: black;
   font-size: 15px;
 }
-.top{
-  max-width: 80%;
-}
 
  .menuLink:hover{
   text-decoration: none;
@@ -66,4 +61,20 @@ span{
   font-size: 18px;
   transition: font-size 0.1s ;
 }
+.pasek{
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding:0;
+}
+li{
+  margin-left: 15px;
+}
+.titleLogo{
+  font-family: 'Lemonada', cursive;
+  font-size: 30px;
+}
+button{
+  margin-right: 20px;
+}
+
 </style>

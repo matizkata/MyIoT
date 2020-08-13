@@ -1,5 +1,20 @@
 <template>
-<div>
-  <p> Login for existing user </p>
-</div>
+  <div>
+    <Loginp/>
+  </div>
 </template>
+
+
+<script>
+
+import Loginp from './components/Loginp';
+
+export default {
+  name: 'Login',
+  components: {
+  Loginp
+
+  }
+}
+</script>
+

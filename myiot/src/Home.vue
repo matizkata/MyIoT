@@ -1,4 +1,5 @@
 <template>
+
   <div>
    <homeWindow/>
   </div>
@@ -18,3 +19,8 @@ export default {
 <style>
 
 </style>
+
+
+
+
+

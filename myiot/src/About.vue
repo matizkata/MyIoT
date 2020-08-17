@@ -1,12 +1,16 @@
 <template>
 <div>
-  <p> Page about us! </p>
+  <aboutWindow/>
 </div>
 </template>
 
 <script>
+import aboutWindow from './components/aboutContent';
+
 export default {
-  name: 'About'
+  name: 'Home',
+  components:{ aboutWindow
+  }
 }
 </script>
 

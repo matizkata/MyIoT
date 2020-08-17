@@ -98,7 +98,7 @@
 
   .homeItem{
     min-width: 50%;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     transition-duration: 500ms;
   }
 
@@ -113,6 +113,11 @@
     width:10%;
     float:left;
     margin-right: 20px;
+  }
+  .socialIcon{
+    width:3%;
+    float:left;
+    margin-right: 5px;
   }
   .arrowIcon{
      width:20%;

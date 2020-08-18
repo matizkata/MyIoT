@@ -1,29 +1,29 @@
 <template>
       <div class="d-flex align-content-center justify-content-center main">
             <div class="inputs">
-              <form action="" method="">
-                 <h4><span class='one'>S</span><span class='two'>I</span><span class='three'>G</span><span class='four'>N</span> <span class='five'>U</span><span class='six'>P</span></h4>
-                 <label for="email">Email address:</label><br>
-                 <input type="email" id="email" class="form" placeholder="name@example.com"><br>
-                 <label for="username">Username:</label><br>
-                 <input type="text" id="username" class="form"><br>
-                 <label for="password">Password:</label><br>
-                 <input type="password" id="password" class="form"><br>
-                 <label for="country">Country:</label><br>
-                 <select id="country" class="select">
-                     <option value="Poland">Poland</option>
-                     <option value="UK">UK</option>
-                     <option value="Deutschland">Deutschland</option>
-                 </select><br>
-                 <button type="submit" class="btn btn-secondary">Submit</button>
-              </form>
+              <label for="email">Email address:</label><br>
+              <input type="email" name="email" placeholder="name@example.com" v-model="email"><br>
+              <label for="password">Password:</label><br>
+              <input type="password" name="password" v-model="password"><br><br>
+              <button>Registry!</button>
             </div>
         </div>
 </template>
 
 <script>
 export default {
-    name: 'Registryp'
+    name: 'Registryp',
+    data () {
+      return{
+        email: 'one1@example.com',
+        password: 'rootpassword'
+      }
+    },
+    watch: {
+      email (value) {
+        console.log('email changed', value)
+      }
+    }
 }
 </script>
 
@@ -68,5 +68,9 @@ export default {
 .form
 {
     margin-bottom:10px;
+}
+button{
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

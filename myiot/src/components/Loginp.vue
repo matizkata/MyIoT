@@ -7,6 +7,7 @@
                 <input type="email" id="email" class="form" placeholder="name@example.com"><br>
                 <label for="password">Password:</label><br>
                 <input type="password" id="password" class="form"><br>
+                Don't have account?<router-link class="nav-link menuLink" to="/registry">Register now!</router-link>
                 <button type="submit" class="btn btn-secondary">Submit</button>
             </form>
         </div>

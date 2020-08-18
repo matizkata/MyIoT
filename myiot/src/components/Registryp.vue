@@ -5,7 +5,7 @@
               <input type="email" name="email" placeholder="name@example.com" v-model="email"><br>
               <label for="password">Password:</label><br>
               <input type="password" name="password" v-model="password"><br><br>
-              <button>Registry!</button>
+              <button class="submiter" @click="register">Registry!</button>
             </div>
         </div>
 </template>
@@ -15,13 +15,14 @@ export default {
     name: 'Registryp',
     data () {
       return{
-        email: 'one1@example.com',
-        password: 'rootpassword'
+        email: '',
+        password: ''
       }
     },
-    watch: {
-      email (value) {
-        console.log('email changed', value)
+
+    methods: {
+      register() {
+       console.log(this.email, this.password)
       }
     }
 }
@@ -69,8 +70,8 @@ export default {
 {
     margin-bottom:10px;
 }
-button{
-  margin-left: auto;
+.submiter{
   margin-right: auto;
+  margin-left: auto;
 }
 </style>

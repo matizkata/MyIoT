@@ -15,6 +15,7 @@
                      <option value="UK">UK</option>
                      <option value="Deutschland">Deutschland</option>
                  </select><br>
+                 Already have an account?<router-link class="nav-link menuLink" to="/login">Log in here!</router-link>
                  <button type="submit" class="btn btn-secondary">Submit</button>
               </form>
             </div>
@@ -69,4 +70,5 @@ export default {
 {
     margin-bottom:10px;
 }
+
 </style>

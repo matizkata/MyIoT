@@ -25,13 +25,13 @@
             <div class="itemText">
               <h5>Kontakt z nami </h5>
               <p>Skontaktować z nami możecie się poprzez nasze konta na Facebooku:</p>
-              <a href="https://www.facebook.com/tomek.grzebieniak.3">
+              <a target="blank" href="https://www.facebook.com/tomek.grzebieniak.3">
                      Tomasz,
               </a>
-              <a href="https://www.facebook.com/mateusz.kata.9">
-                     Mateusz, 
+              <a target="blank" href="https://www.facebook.com/mateusz.kata.9">
+                     Mateusz,
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100011826368288">
+              <a target="blank" href="https://www.facebook.com/profile.php?id=100011826368288">
                      Łukasz
               </a>
             </div>
@@ -46,7 +46,7 @@
               <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
             </div>
         </div>
-         
+
       </div>
       <div class="slideDownArrow" v-on:click="isVisible=!isVisible" v-if="!isVisible">
         <img class="arrowIcon" src="/images/down.png">

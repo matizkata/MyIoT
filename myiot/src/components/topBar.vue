@@ -1,8 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light pasek">
-    <div class="navbar-brand ml-4 nawigacja">
-      <!-- <span><router-link class="menuLink" to="/"><img class="logo" src="/images/logo1.png"></router-link></span> -->
-      <span class="titleLogo">ezIoT</span>
+    <div class="navbar-brand ml-4">
+      <router-link class="menuLink" to="/">
+        <span class="titleLogo">ezIoT</span>
+      </router-link>
     </div>
     <div class="navbar-brand">
       <div class="menu"><iframe src="http://free.timeanddate.com/clock/i7entjlf/n1460/fn16/tcf0f8ff/pct/ftb/th2" frameborder="0" width="86" height="18" allowTransparency="true"></iframe></div>
@@ -73,6 +74,7 @@ li{
   font-family: 'Lemonada', cursive;
   font-size: 30px;
 }
+
 button{
   margin-right: 20px;
 }

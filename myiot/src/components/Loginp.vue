@@ -1,22 +1,44 @@
 <template>
     <div class="d-flex align-content-center justify-content-center main">
-        <div class="inputs">
-            <form action="" method="">
-                <h4>LOG IN</h4>
-                <label for="email">Email address:</label><br>
-                <input type="email" id="email" class="form" placeholder="name@example.com"><br>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" class="form"><br>
-                Don't have account?<router-link class="nav-link menuLink" to="/registry">Register now!</router-link>
-                <button type="submit" class="btn btn-secondary">Submit</button>
-            </form>
-        </div>
+
+       <div class="inputs">
+           <h4> LOGIN</h4>
+              <label for="email">Email address:</label><br>
+              <input type="email" name="email" placeholder="name@example.com" v-model="email"><br>
+              <label for="password">Password:</label><br>
+              <input type="password" name="password" v-model="password"><br><br>
+              <div class="error" v-html="error"/>
+              <button class="btn btn-secondary submiter" @click="login">Login!</button>
+            </div>
     </div>
 </template>
 
 <script>
+import AuthenticationService from '@/services/AuthenticationService'
 export default {
-    name: 'Loginp'
+    name: 'Loginp',
+    data () {
+      return{
+        email: '',
+        password: '',
+        error: null
+      }
+    },
+
+    methods: {
+      async login () {
+        try{
+          await AuthenticationService.login({
+            email: this.email,
+            password: this.password
+          })
+        }
+        catch (error) {
+          this.error = error.response.data.error
+          // console.log(error.response.data.error)
+        }
+      }
+    }
 }
 </script>
 

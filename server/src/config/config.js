@@ -1,5 +1,5 @@
 module.exports = {
-  port: process.env.PORT || 8081,
+  port:8081,
   db: {
     database: process.env.DB_NAME || 'myiot',
     user: process.env.DB_USER || 'myiot',
@@ -9,8 +9,5 @@ module.exports = {
       host: process.env.HOST || 'localhost',
       storage: './myiot.sqlite'
     }
-  },
-  authentication: {
-    jwtSecret: process.env.JWT_SECRET || 'secret'
   }
 }

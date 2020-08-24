@@ -1,5 +1,6 @@
 <template>
     <div class="d-flex align-content-center justify-content-center main">
+
        <div class="inputs">
            <h4> LOGIN</h4>
               <label for="email">Email address:</label><br>

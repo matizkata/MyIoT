@@ -1,5 +1,6 @@
 <template>
     <div class="d-flex align-content-center justify-content-center main">
+
        <div class="inputs">
            <h4> LOGIN</h4>
               <label for="email">Email address:</label><br>
@@ -13,8 +14,31 @@
 </template>
 
 <script>
+import AuthenticationService from '@/services/AuthenticationService'
 export default {
-    name: 'Loginp'
+    name: 'Loginp',
+    data () {
+      return{
+        email: '',
+        password: '',
+        error: null
+      }
+    },
+
+    methods: {
+      async login () {
+        try{
+          await AuthenticationService.login({
+            email: this.email,
+            password: this.password
+          })
+        }
+        catch (error) {
+          this.error = error.response.data.error
+          // console.log(error.response.data.error)
+        }
+      }
+    }
 }
 </script>
 

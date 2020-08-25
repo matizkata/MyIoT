@@ -1,14 +1,12 @@
 <template>
       <div class="d-flex align-content-center justify-content-center main">
             <div class="inputs">
-
               <label for="email">Email address:</label><br>
               <input type="email" name="email" placeholder="name@example.com" v-model="email"><br>
               <label for="password">Password:</label><br>
               <input type="password" name="password" v-model="password"><br><br>
               <div class="error" v-html="error"/>
               <button class="btn btn-secondary submiter" @click="register">Registry!</button>
-
             </div>
         </div>
 </template>
@@ -84,7 +82,6 @@ export default {
 {
     margin-bottom:10px;
 }
-
 .submiter{
   margin-right: auto;
   margin-left: auto;

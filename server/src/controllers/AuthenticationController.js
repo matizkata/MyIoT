@@ -35,7 +35,7 @@ module.exports = {
         })
       }
 
-      const isPasswordValid = await user.comparePassword(password)
+      const isPasswordValid = password === user.password
       if(!isPasswordValid) {
         return res.status(403).send({
           error: 'Incorrect password'
@@ -43,7 +43,7 @@ module.exports = {
       }
       const userJson=user.toJSON()
       res.send({
-        user: userJson(),
+        user: userJson,
         token: jwtSignUser(userJson)
       })
     }

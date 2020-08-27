@@ -3,10 +3,10 @@ import VueRouter from 'vue-router';
 import App from './App.vue';
 import Home from './Home.vue';
 import About from './About.vue';
-import Login from './Login.vue';
-import Registry from './Registry.vue';
-import {sync} from 'vuex-router-sync'
-import store from '@/store/store'
+import Login from './Login.vue'
+import Registry from './Registry.vue'
+import {sync} from 'vuex-router-sync';
+import store from '@/store/store';
 
 //Vue.config.productionTip = false
 

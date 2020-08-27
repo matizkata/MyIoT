@@ -36,8 +36,6 @@ module.exports = {
       }
 
       const isPasswordValid = await user.comparePassword(password)
-      console.log('czy haslovalid: ')
-      console.log(isPasswordValid)
       if(!isPasswordValid) {
         return res.status(403).send({
           error: 'Incorrect password'

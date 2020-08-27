@@ -13,5 +13,6 @@ export default new Router({
     {path: '/about', component: About},
     {path: '/login', component: Login},
     {path: '/registry', component: Registry}
-  ]
+  ],
+  mode: 'history'
 })

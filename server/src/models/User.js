@@ -14,8 +14,8 @@ function hashPassword (user, options) {
   .then(hash => {
     user.setDataValue('password', hash)
   })
-}
 
+}
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
@@ -29,10 +29,14 @@ module.exports = (sequelize, DataTypes) => {
     hooks: {
       beforeCreate: hashPassword,
       beforeUpdate: hashPassword,
-      beforeSave: hashPassword
+      // beforeSave: hashPassword//przed zapisaniem hashowalo juz raz hashowane haslo, dlatego powodowalo to blad hasla przy logowaniu
     }
   })
   User.prototype.comparePassword = function (password) {
+    console.log('plain: ')
+    console.log(password)
+    console.log('hash: ')
+    console.log(this.password)
     return bcrypt.compareAsync(password, this.password)
   }
 

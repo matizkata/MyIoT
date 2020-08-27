@@ -4,7 +4,7 @@
               <label for="email">Email address:</label><br>
               <input type="email" name="email" placeholder="name@example.com" v-model="email"><br>
               <label for="password">Password:</label><br>
-              <input type="password" name="password" v-model="password"><br><br>
+              <input type="password" name="password" autocomplete="new-password" v-model="password"><br><br>
               <div class="error" v-html="error"/>
               <button class="btn btn-secondary submiter" @click="register">Registry!</button>
             </div>

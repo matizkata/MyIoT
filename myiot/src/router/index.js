@@ -9,10 +9,11 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {path: '/', component: Home},
-    {path: '/about', component: About},
-    {path: '/login', component: Login},
-    {path: '/registry', component: Registry}
+    {path: '/', name: 'Home', component: Home},
+    {path: '/about', name: 'About', component: About},
+    {path: '/login', name: 'Login', component: Login},
+    {path: '/registry', name:'Registry', component: Registry},
+    {path: '*', redirect: 'Home'}
   ],
-  mode: 'history'
+  // mode: 'history'
 })

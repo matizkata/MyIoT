@@ -9,7 +9,7 @@ import App from './App.vue';
  import {sync} from 'vuex-router-sync';
  import store from '@/store/store';
 
-//Vue.config.productionTip = false
+Vue.config.productionTip = false
  sync(store, router)
 
 
@@ -33,5 +33,6 @@ import App from './App.vue';
 new Vue({
  el: '#app',
   router,
+  store,
   render: h => h(App),
 }).$mount('#app')

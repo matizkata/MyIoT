@@ -5,12 +5,12 @@ import Home from './Home.vue';
 import About from './About.vue';
 import Login from './Login.vue'
 import Registry from './Registry.vue'
-import {sync} from 'vuex-router-sync';
-import store from '@/store/store';
+// import {sync} from 'vuex-router-sync';
+// import store from '@/store/store';
 
 //Vue.config.productionTip = false
-
-Vue.use(VueRouter);
+// sync(store, VueRouter)
+ Vue.use(VueRouter);
 
 const routes= [
   {path: '/', component: Home},
@@ -23,6 +23,8 @@ const router = new VueRouter({
 routes: routes,
 mode: 'history'
 });
+
+
 
 new Vue({
  el: '#app',

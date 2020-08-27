@@ -5,6 +5,8 @@ import Home from './Home.vue';
 import About from './About.vue';
 import Login from './Login.vue';
 import Registry from './Registry.vue';
+import {sync} from 'vuex-router-sync'
+import store from '@/store/store'
 
 //Vue.config.productionTip = false
 

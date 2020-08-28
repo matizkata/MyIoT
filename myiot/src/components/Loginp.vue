@@ -2,14 +2,14 @@
     <div class="d-flex align-content-center justify-content-center main">
        <div class="inputs">
            <h4> LOGIN</h4>
-            <form>
+
               <label for="email">Email address:</label><br>
               <input type="email" name="email" placeholder="name@example.com" v-model="email"><br>
               <label for="password">Password:</label><br>
               <input type="password" name="password" autocomplete="password" v-model="password"><br><br>
               <div class="error" v-html="error"/>
               <button class="btn btn-secondary submiter" @click="login">Login!</button>
-            </form>
+
        </div>
     </div>
 </template>
@@ -35,6 +35,7 @@ export default {
           })
           this.$store.dispatch('setToken', response.data.token)
           this.$store.dispatch('setUser', response.data.user)
+          // console.log(response.data.user.email)
         }
         catch (error) {
           this.error = error.response.data.error

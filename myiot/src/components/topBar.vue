@@ -16,8 +16,13 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><router-link class="nav-link menuLink" to="/">HOME</router-link></li>
         <li class="nav-item"><router-link class="nav-link menuLink" to="about">ABOUT</router-link></li>
-        <li class="nav-item"><router-link class="nav-link menuLink" to="/login">LOGIN</router-link></li>
-        <li class="nav-item"><router-link class="nav-link menuLink" to="/registry">SIGN UP</router-link></li>
+        <li class="nav-item" v-if="(!$store.state.isUserLoggedIn)"><router-link class="nav-link menuLink" to="/login">LOGIN</router-link></li>
+        <!-- <li class="nav-item"><router-link class="nav-link menuLink" to="/login">LOGIN</router-link></li>
+        <li class="nav-item"><router-link class="nav-link menuLink" to="/registry">SIGN UP</router-link></li> -->
+        <li class="nav-item" v-if="(!$store.state.isUserLoggedIn)"><router-link class="nav-link menuLink" to="/registry">SIGN UP</router-link></li>
+        <li class="nav-item" v-if="($store.state.isUserLoggedIn)"><router-link class="nav-link menuLink" to="/myboard">MY BOARD</router-link></li>
+        <li class="nav-item" v-if="($store.state.isUserLoggedIn)" @click="logout"><router-link class="nav-link menuLink" to="/">LOG OUT</router-link></li>
+
       </ul>
     </div>
 
@@ -26,7 +31,13 @@
 
 <script>
 export default {
-name: 'topBar'
+name: 'topBar',
+methods: {
+  logout(){
+    this.$store.dispatch('setToken', null)
+    this.$store.dispatch('setUser', null)
+  }
+}
 }
 </script>
 

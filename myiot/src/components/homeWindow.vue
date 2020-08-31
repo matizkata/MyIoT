@@ -52,6 +52,19 @@
               <p>Pozostaje tylko korzystać i cieszyć się z wygody jaką oferuje urządzenie sterowane bezprzewodowo. W ten łatwy sposób możesz wprowadzić trochę technologii do swojego domu, garażu lub nawet małego biznesu. Możesz też po prostu dobrze się bawić!</p>
             </div>
         </div>
+        <div class="homeItem">
+          <img class="itemIcon" src="/images/document.png">
+            <div class="itemText">
+              <h5>Wykorzystane ikony:</h5>
+              Icons made by: <br>
+              <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+              <div>Icons made by <a href="https://www.flaticon.com/free-icon/cpu_667012" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+              <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+              <div>Icons made by <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+              <div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
+        </div>
       </div>
       <div class="slideDownArrow" v-on:click="isVisible=!isVisible" v-if="!isVisible">
         <img class="arrowIcon" src="/images/down.png">
@@ -152,7 +165,7 @@
    overflow: hidden;
  }
 .contentIsVisible{
-  height: 1012px;
+  height: auto;
   /* display: block; */
 }
 

@@ -5,19 +5,19 @@
        <img class="itemIcon" src="/images/team.png">
         <div class="itemText">
           <h5>Kim jesteśmy?</h5>
-          <p>Jesteśmy grupą 3 ambitnych studentów 3 roku z Politechniki Rzeszowskiej. Strona służy nam do sprawdzenia się oraz nauki nowych technologii.</p>
-          <p>Chcemy rozwijać nasze umiejętności.Jesteśmy  otwarci na pomysły i projekty urządzeń które możnaby dodać do obsługi poprzez stronę  .</p>
+          <p>Jesteśmy studentami 3 roku informatyki na Politechnice Rzeszowskiej. Ucząc się postanowiliśmy stworzyć projekt łączący różne dziedziny informatyczne</p>
+          <p>Chcemy rozwijać nasze umiejętności. Jesteśmy  otwarci na pomysły i projekty urządzeń które możnaby dodać do obsługi poprzez stronę  .</p>
         </div>
      </div>
 
 
-      <div class="homeContents" v-bind:class="{contentIsVisible2:isVisible}">
+      <div class="homeContents" v-bind:class="{contentIsVisible:isVisible}">
         <div class="homeItem">
             <img class="itemIcon" src="/images/usb.png">
             <div class="itemText">
-              <h5>Oprogramowanie wykorzystywane na stronie</h5>
-              <p>Strona jest tworzona na bieżąco. Uczymy się  nowych technologii i wykorzystujemy zdobytą wiedzę w celu usprawnienia działania naszej strony.</p>
-              <p>Podstawą działania strony jest framework do JavaScriptu o nazwie Vue.Dodatkowo wykorzystujemy  HTML 5 , CSS 3 , Javascript oraz biblioteki Bootstrap.</p>
+              <h5>Technologie</h5>
+              <p>Projekt utworzono z wykorzystaniem Vue.js oraz środowiska node.js.</p>
+              <p>Obecnie serwis jest w fazie budowy.</p>
             </div>
         </div>
         <div class="homeItem">
@@ -25,13 +25,13 @@
             <div class="itemText">
               <h5>Kontakt z nami </h5>
               <p>Skontaktować z nami możecie się poprzez nasze konta na Facebooku:</p>
-              <a href="https://www.facebook.com/tomek.grzebieniak.3">
+              <a target="blank" href="https://www.facebook.com/tomek.grzebieniak.3">
                      Tomasz,
               </a>
-              <a href="https://www.facebook.com/mateusz.kata.9">
-                     Mateusz, 
+              <a target="blank" href="https://www.facebook.com/mateusz.kata.9">
+                     Mateusz,
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100011826368288">
+              <a target="blank" href="https://www.facebook.com/profile.php?id=100011826368288">
                      Łukasz
               </a>
             </div>
@@ -46,7 +46,7 @@
               <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
             </div>
         </div>
-         
+
       </div>
       <div class="slideDownArrow" v-on:click="isVisible=!isVisible" v-if="!isVisible">
         <img class="arrowIcon" src="/images/down.png">
@@ -74,8 +74,4 @@
   }
 </script>
 <style>
-.contentIsVisible2{
-  height: 550px;
-  /* display: block; */
-}
 </style>

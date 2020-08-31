@@ -52,6 +52,16 @@
               <p>Pozostaje tylko korzystać i cieszyć się z wygody jaką oferuje urządzenie sterowane bezprzewodowo. W ten łatwy sposób możesz wprowadzić trochę technologii do swojego domu, garażu lub nawet małego biznesu. Możesz też po prostu dobrze się bawić!</p>
             </div>
         </div>
+        <div class="homeItem">
+          <img class="itemIcon" src="/images/document.png">
+            <div class="itemText">
+              <h5>Wykorzystane ikony:</h5>
+              Icons made by: <br>
+              <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a><br>
+              <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a><br>
+              <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            </div>
+        </div>
       </div>
       <div class="slideDownArrow" v-on:click="isVisible=!isVisible" v-if="!isVisible">
         <img class="arrowIcon" src="/images/down.png">
@@ -152,7 +162,7 @@
    overflow: hidden;
  }
 .contentIsVisible{
-  height: 1012px;
+  height: auto;
   /* display: block; */
 }
 
